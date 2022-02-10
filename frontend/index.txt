@@ -1,0 +1,5 @@
+titleText:Netflix - Watch TV Shows Online, Watch Movies Online
+headerTwoText:Unlimited movies, TV shows, and more
+headerFiveText:Watch anywhere. Cancel anytime.
+ParagraphText:Ready to watch? Enter your email to create or restart your membership
+Horizon: color #DF9B32

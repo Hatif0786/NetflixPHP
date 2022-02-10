@@ -1,0 +1,182 @@
+@font-face{
+    font-family: "Roboto";
+    src: url(Roboto-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Roboto',sans-serif ;
+}
+
+body{
+    background: rgb(255,255,255);
+    color: #333;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.site-container .site-header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+   position: absolute;
+    top: 0;
+    left: auto;
+    width: 100%;
+    z-index: 10;
+   
+}
+
+.brand-container{
+    height: 36px;
+    width: 134px;
+}
+
+.brand-container .site-logo{
+    height: 100%;
+    width: 100%;
+}
+
+.screen-reader-text{
+    position: absolute;
+    top: -9999px;
+    left: -9999px
+}
+
+.site-container .site-header a{
+    color: #fff;
+    background: #e50914;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index:1;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;  
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+  }
+
+.banner .our-story-card-background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.banner .our-story-card-text{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.banner .our-story-card-text .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner .our-story-card-text .heading h2{
+    font-size: 3.125em;
+    color: #fff;
+    letter-spacing: 2px;
+    width: 80%;
+}
+
+.banner .our-story-card-text .heading h5{
+    font-size: 1.625em;
+    color: #fff;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+ 
+.inputError{
+    color: #ffa00a;
+    margin-bottom: -6px;
+    padding: 6px 3px;
+    font-size: 24px;
+}
+
+.banner .our-story-card-text .heading p{
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 0;
+    padding-bottom:20px;
+}
+
+.banner .global-search{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner  .global-search input{
+    height: 60px;
+    min-width: 400px;
+    padding: 10px 10px 0 10px;
+    outline: none;
+    border: 1px solid #8c8c8c;
+    font-size: 16px;
+    border-top-left-radius: 4px;
+    align-items: center;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #ffa00a;
+}
+
+.f-group{
+    display: flex;
+}
+
+.banner .global-search button{
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    background: #e50914;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    line-height: 60px;
+    font-size: 1.625rem;
+    min-width: 310px;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
